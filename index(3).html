@@ -1,0 +1,490 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0f1f33">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="14-Day Reset">
+<link rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAIAAACyr5FlAAAEJUlEQVR4nO3dsXHcVhiFUdLjXI6daMYtKHQZ7sVFuBeXoTYcOnYJDjCzs2PzUqvFew8X4DmhRGmwDx9+YIEl+frp85cXeMsPR28AvcRBJA4icRCJg0gcROIgEgeROIjEQSQOInEQiYNIHETiIBIHkTiIxEEkDiJxEImD6MejNyD656+vR2/COj/98uvRm/CG16pvTfhQQSQ9oVTEoYk3HV7JkXFo4kFHVXLYBakyHnfUWh0wOWTxtMUjZPXkUMYei1dv3eSQxUBrRsiiyaGMsdas54o4lDHDglWdHocy5pm9tnPjUMZsU1d4YhzKWGPeOs+KQxkrTVptj+yJpsRhbKw3Y83Hx6GMowxfeacVosFxGBvHGrv+I+NQRoOBe8FphUgcRMPicE7pMWpfmBxE4iAaE4dzSpshe8TkIBIHkTiIBsThgqPT/v1ichCJg0gcROIgEgeROIjEQSQOInEQiYNIHETiIBIHkTiIxEEkDiJxEImDqPf3rdwc/ssD5in/hGV1HBfOYrO9wNpESuO4fBb3ahNpvOb4UGXcFL7qxjgoURdH4QG0TNtrr4uDHl1xtB0661WtQFccVBEHkTiIxEHUFUfhXcLFqlagKw6q1MVRdegs1vba6+KgR2McbQfQGoWvuvSR/bZSVbcL5ynMYlMax+byidRmsamOY1O+ghfWeM1BCXEQiYNIHETiIBIHkTiIxEF0gptgV/Lz77/9/w///uPP9VvyCHEs8mYW939VmMgJ4mh7tvLE7fx3yrj/mrY+Xj99/rLzv5j37KMti3sPvupHsviPgYnsXMDSydGcxab2W+MHany30l/Gzfub+sTYePpfzdAYxzXs2cclfdTFcaKxsTndBj+uLo5r2H/oNwyPrjhOehSedLO/qSsOqoiDSBxE4iDqiuOkNxxPutnf1BXHZex/PtLwEK4ujtMdhafb4MfVxXEZew79hrHx0hnHiY7F9zf1uX1cUsZL7SP7/m+hPlHBT6v+sM+mLZFJnwR7mTAzdi7dCeK4hm/2MeNscs1Pgl3Ptu99+pyotoM3Nb5boYQ4iMRBJA4icRCJg0gcROIgGhBH27MPNvv3i8lBJA4icRCNicNlR5she8TkIBIH0bA4nFl6jNoXJgeROIhGxuHM0mDgXhg8OfRxrLHr77RCND4Ow+Mow1d+yuTQx3oz1txphWhWHIbHSpNWe+Lk0Mca89Z57mlFH7NNXeHp1xz6mGf22q64INXHDAtWddG7FX2MtWY9B/zwlu/iJ73stPIwW32fwwjZY/HqrZ4cN0bIdznkoDrsDqkR8rij1uqwyXHPFHnT4cdPRRw3KnkpaOKmK457HyqUniDu9cbB4TyyJxIHkTiIxEEkDiJxEImDSBxE4iASB5E4iMRBJA4icRCJg0gcROIgEgeROIjEQfQvnK0Fx0w3P8sAAAAASUVORK5CYII=">
+<title>14-Day Reset Challenge</title>
+<style>
+:root {
+  --bg:#f5f1e9; --paper:#fffdf8; --paper2:#f1ede5; --ink:#112238; --muted:#687386;
+  --line:#ddd6ca; --navy:#0f1f33; --navy2:#1c3554; --green:#19734b; --greenBg:#eaf6ef;
+  --amber:#936300; --amberBg:#fff7df; --red:#b42318; --shadow:0 10px 35px rgba(15,31,51,.08);
+  --radius:18px;
+}
+*{box-sizing:border-box}
+html{background:var(--bg);scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased}
+button,input,textarea{font:inherit} button{cursor:pointer}
+button:disabled{opacity:.35;cursor:default}
+.app{max-width:760px;margin:0 auto;min-height:100dvh;padding:calc(14px + env(safe-area-inset-top)) 14px calc(110px + env(safe-area-inset-bottom))}
+.header{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;padding:5px 2px 13px}
+.brand{display:flex;gap:11px;align-items:center}
+.logo{width:42px;height:42px;border-radius:13px;background:var(--navy);display:grid;place-items:center;box-shadow:var(--shadow)}
+.logo:before{content:"";width:21px;height:13px;border-top:4px solid white;border-bottom:4px solid white;border-radius:2px}
+.kicker{text-transform:uppercase;letter-spacing:.1em;font-size:10px;font-weight:900;color:var(--muted)}
+h1{font-size:22px;letter-spacing:-.035em;margin:2px 0 0;line-height:1.08}
+.statusPill,.pill{border:1px solid var(--line);background:var(--paper);border-radius:999px;padding:8px 10px;font-size:11px;font-weight:850;white-space:nowrap}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:15px;margin:11px 0}
+.card.flat{box-shadow:none}
+.notice{background:var(--navy);color:white;border-radius:16px;padding:13px 14px;margin:6px 0 12px}
+.notice b{display:block;font-size:14px;margin-bottom:2px} .notice span{font-size:12px;opacity:.78;line-height:1.4}
+.dateNav{display:grid;grid-template-columns:44px 1fr 44px;gap:8px;align-items:center}
+.iconBtn{height:44px;border:1px solid var(--line);border-radius:12px;background:var(--paper);font-size:21px;font-weight:800;color:var(--ink)}
+input[type=date]{width:100%;height:44px;border:1px solid var(--line);border-radius:12px;padding:0 12px;background:white;color:var(--ink);font-weight:800}
+.hero{display:grid;grid-template-columns:1fr 76px;gap:12px;align-items:center}
+.dayLabel{text-transform:uppercase;letter-spacing:.09em;font-size:10px;color:var(--muted);font-weight:900}
+.dayTitle{font-size:23px;line-height:1.08;font-weight:900;letter-spacing:-.03em;margin:4px 0}
+.sub{font-size:12px;color:var(--muted);line-height:1.45}
+.ring{--p:0;width:74px;height:74px;border-radius:50%;display:grid;place-items:center;background:conic-gradient(var(--navy) calc(var(--p)*1%),#e7e1d7 0);position:relative}
+.ring:after{content:"";position:absolute;inset:7px;border-radius:50%;background:var(--paper)}
+.ring .inside{position:relative;z-index:1;text-align:center}
+.ring b{display:block;font-size:20px;line-height:1} .ring small{font-size:9px;color:var(--muted);font-weight:800}
+.rule{margin-top:12px;padding:10px 11px;border-radius:12px;background:var(--paper2);display:flex;justify-content:space-between;gap:8px;font-size:12px}
+.rule span{color:var(--muted)} .rule b{text-align:right}
+.sectionTitle{font-size:14px;font-weight:900;margin:1px 0 8px;display:flex;justify-content:space-between;gap:8px;align-items:center}
+.sectionTitle small{font-size:10px;color:var(--muted);font-weight:800}
+.check{display:grid;grid-template-columns:28px 1fr auto;align-items:center;gap:9px;padding:12px 2px;border-top:1px solid #ece7de}
+.check.first{border-top:0}
+.check input[type=checkbox]{appearance:none;width:23px;height:23px;border:2px solid #b9b1a6;border-radius:7px;margin:0;display:grid;place-items:center;background:white}
+.check input[type=checkbox]:checked{background:var(--navy);border-color:var(--navy)}
+.check input[type=checkbox]:checked:after{content:"✓";font-size:15px;color:white;font-weight:950}
+.check label{font-size:14px;font-weight:760;line-height:1.25}
+.meta{font-size:10px;color:var(--muted);font-weight:800;text-align:right}
+.exerciseRow{display:grid;grid-template-columns:28px 1fr 76px;gap:9px;align-items:center;padding:11px 2px;border-top:1px solid #ece7de}
+.exerciseRow input[type=checkbox]{appearance:none;width:23px;height:23px;border:2px solid #b9b1a6;border-radius:7px;margin:0;display:grid;place-items:center;background:white}
+.exerciseRow input[type=checkbox]:checked{background:var(--navy);border-color:var(--navy)}
+.exerciseRow input[type=checkbox]:checked:after{content:"✓";font-size:15px;color:white;font-weight:950}
+.exMain b{font-size:13px;display:block} .exMain span{font-size:10px;color:var(--muted);display:block;margin-top:2px}
+.loadInput{width:100%;height:34px;border:1px solid var(--line);border-radius:9px;background:white;padding:0 7px;font-size:12px;text-align:center}
+.fallback{margin-top:10px;padding:11px;background:var(--amberBg);border:1px solid #ead49a;border-radius:12px}
+.fallback .check{border:0;padding:0}
+.fallback p{margin:7px 0 0 32px;font-size:10px;color:#795b14;line-height:1.4}
+.completion{display:flex;justify-content:space-between;gap:8px;margin-top:10px;padding:9px 11px;background:var(--paper2);border-radius:11px;font-size:11px}
+.good{color:var(--green)!important}
+.foodHint{font-size:11px;color:var(--muted);line-height:1.45;padding:8px 10px;background:var(--paper2);border-radius:10px;margin:3px 0 5px}
+.miniInput{width:100%;height:38px;border:1px solid var(--line);border-radius:10px;padding:0 10px;background:white;color:var(--ink);margin-top:6px;font-size:12px}
+.metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:7px}
+.metric label{display:block;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);font-size:9px;font-weight:900;margin:0 0 5px 2px}
+.metric input{width:100%;height:39px;border:1px solid var(--line);border-radius:10px;padding:0 8px;background:white;color:var(--ink);font-weight:750;font-size:12px}
+textarea{width:100%;min-height:76px;margin-top:9px;border:1px solid var(--line);border-radius:11px;padding:10px;background:white;color:var(--ink);font-size:12px;resize:vertical}
+.saveLine{font-size:10px;color:var(--muted);margin-top:7px;text-align:right}
+.tabs{position:fixed;z-index:20;left:50%;transform:translateX(-50%);bottom:calc(11px + env(safe-area-inset-bottom));width:min(500px,calc(100% - 26px));display:grid;grid-template-columns:1fr 1fr;gap:5px;padding:5px;background:rgba(255,253,248,.95);backdrop-filter:blur(16px);border:1px solid var(--line);border-radius:17px;box-shadow:0 14px 35px rgba(15,31,51,.16)}
+.tab{height:48px;border:0;border-radius:12px;background:transparent;color:var(--muted);font-weight:900}
+.tab.active{background:var(--navy);color:white}
+.pane{display:none} .pane.active{display:block}
+.bigScore{font-size:39px;font-weight:950;letter-spacing:-.05em;line-height:1}
+.progressHead{display:flex;justify-content:space-between;align-items:flex-end;gap:8px}
+.bar{height:9px;background:#e8e2d9;border-radius:999px;overflow:hidden;margin-top:12px} .bar span{display:block;height:100%;background:var(--navy);border-radius:inherit;width:0}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:7px;margin-top:11px}
+.stat{background:var(--paper2);padding:10px;border-radius:11px;min-width:0}
+.stat b{font-size:16px;display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis} .stat span{font-size:9px;color:var(--muted);font-weight:800;line-height:1.2;display:block;margin-top:2px}
+.dayGrid{display:grid;grid-template-columns:repeat(7,1fr);gap:6px}
+.dayTile{aspect-ratio:1;border:1px solid var(--line);background:white;border-radius:11px;display:grid;place-items:center;padding:3px;color:var(--ink)}
+.dayTile b{font-size:12px;line-height:1} .dayTile small{font-size:8px;color:var(--muted);font-weight:850}
+.dayTile.perfect{background:var(--greenBg);border-color:#b8dac8;color:var(--green)}
+.dayTile.partial{background:var(--amberBg);border-color:#e8d39a;color:var(--amber)}
+.dayTile.selected{outline:2px solid var(--navy);outline-offset:2px}
+.chart{display:grid;grid-template-columns:repeat(14,1fr);align-items:end;height:112px;gap:4px;padding-top:10px}
+.chartCol{display:flex;flex-direction:column;justify-content:flex-end;align-items:center;height:100%;gap:4px}
+.chartBar{width:100%;max-width:24px;background:var(--navy);border-radius:6px 6px 3px 3px;min-height:3px}
+.chartCol small{font-size:7px;color:var(--muted);font-weight:850}
+.report{font-size:11px;line-height:1.55;white-space:pre-wrap;background:var(--paper2);padding:11px;border-radius:11px;max-height:320px;overflow:auto}
+.actions{display:grid;grid-template-columns:1fr 1fr;gap:7px;margin-top:9px}
+.primary,.secondary,.danger{min-height:43px;border-radius:11px;padding:0 10px;font-weight:850;font-size:12px}
+.primary{background:var(--navy);color:white;border:1px solid var(--navy)}
+.secondary{background:var(--paper);color:var(--ink);border:1px solid var(--line)}
+.danger{background:#fff7f6;color:var(--red);border:1px solid #e4b7b2}
+.install{font-size:11px;line-height:1.5;color:var(--muted)}
+.install b{color:var(--ink)}
+.toast{position:fixed;z-index:50;top:calc(10px + env(safe-area-inset-top));left:50%;transform:translate(-50%,-8px);opacity:0;background:var(--navy);color:white;border-radius:999px;padding:9px 13px;font-size:10px;font-weight:900;pointer-events:none;transition:.18s}
+.toast.show{opacity:1;transform:translate(-50%,0)}
+.fileInput{display:none}
+@media(max-width:560px){
+  .metrics{grid-template-columns:1fr 1fr}
+  .stats{grid-template-columns:1fr 1fr}
+  .header .statusPill{display:none}
+  .exerciseRow{grid-template-columns:28px 1fr 66px}
+  .app{padding-left:11px;padding-right:11px}
+}
+@media print{
+  body{background:white} .tabs,.noPrint,.toast{display:none!important} .app{max-width:none;padding:0}
+  .pane{display:none!important} #progressPane{display:block!important} .card{box-shadow:none;break-inside:avoid}
+}
+</style>
+</head>
+<body>
+<div class="toast" id="toast">Saved ✓</div>
+<main class="app">
+  <header class="header">
+    <div class="brand">
+      <div class="logo"></div>
+      <div><div class="kicker">14-Day Reset</div><h1>Gym & nutrition challenge</h1></div>
+    </div>
+    <div class="statusPill" id="headerPill">Starts tomorrow</div>
+  </header>
+
+  <div class="notice" id="startNotice">
+    <b>Day 1 is tomorrow — Friday 21 August</b>
+    <span>Your first task is Gym A. When you open this tomorrow, Day 1 will be selected automatically.</span>
+  </div>
+
+  <section class="pane active" id="todayPane">
+    <div class="card noPrint">
+      <div class="dateNav">
+        <button class="iconBtn" id="prev">‹</button>
+        <input type="date" id="datePicker" min="2026-08-21" max="2026-09-03">
+        <button class="iconBtn" id="next">›</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="hero">
+        <div>
+          <div class="dayLabel" id="dayLabel"></div>
+          <div class="dayTitle" id="dayTitle"></div>
+          <div class="sub" id="dateLong"></div>
+        </div>
+        <div class="ring" id="ring"><div class="inside"><b id="dayScore">0</b><small>/ 6 today</small></div></div>
+      </div>
+      <div class="rule"><span>Today’s rule</span><b id="ruleText"></b></div>
+    </div>
+
+    <div class="card">
+      <div class="sectionTitle">Morning <small>Build the automatic start</small></div>
+      <div class="check first">
+        <input type="checkbox" id="outOfBed"><label for="outOfBed">Out of bed by 7:35</label><div class="meta">bonus</div>
+      </div>
+      <div class="check">
+        <input type="checkbox" id="noScroll"><label for="noScroll">No scrolling before morning routine</label><div class="meta">1 point</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="sectionTitle"><span id="exerciseTitle">Workout</span><small id="exerciseSmall"></small></div>
+      <div id="exerciseRows"></div>
+      <div class="fallback" id="fallbackBox">
+        <div class="check first">
+          <input type="checkbox" id="fallback"><label for="fallback">10-minute minimum completed instead</label><div class="meta">show-up win</div>
+        </div>
+        <p>Use this only on a rough gym morning. It keeps the habit alive without pretending you completed the full workout.</p>
+      </div>
+      <div class="completion"><span>Exercise point</span><b id="exerciseStatus">Not complete</b></div>
+    </div>
+
+    <div class="card">
+      <div class="sectionTitle">Meals & hydration <small>Simple, not extreme</small></div>
+
+      <div class="check first">
+        <input type="checkbox" id="breakfast"><label for="breakfast">Breakfast on plan</label><div class="meta">9:30 AM</div>
+      </div>
+      <div class="foodHint">Protein + whole-food carbohydrate + fruit/vegetables. Example: eggs + wholegrain toast + fruit.</div>
+      <input class="miniInput" id="breakfastNote" placeholder="Optional: what did you eat?">
+
+      <div class="check">
+        <input type="checkbox" id="lunch"><label for="lunch">Lunch on plan</label><div class="meta">2:30 PM</div>
+      </div>
+      <div class="foodHint">Aim for ½ vegetables, ¼ protein, ¼ rice/roti/potato. Keep this as your main meal.</div>
+      <input class="miniInput" id="lunchNote" placeholder="Optional: what did you eat?">
+
+      <div class="check">
+        <input type="checkbox" id="evening"><label for="evening">Evening rule followed</label><div class="meta">1 point</div>
+      </div>
+      <div class="foodHint">No mindless evening snacking. If genuinely hungry, a small nutritious protein-based meal still counts as on-plan.</div>
+
+      <div class="check">
+        <input type="checkbox" id="water"><label for="water">Hydration goal met</label><div class="meta">1 point</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="sectionTitle">Night check-in <small>30 seconds</small></div>
+      <div class="metrics">
+        <div class="metric"><label>Weight kg</label><input id="weight" inputmode="decimal" placeholder="optional"></div>
+        <div class="metric"><label>Energy /10</label><input id="energy" type="number" min="1" max="10" inputmode="numeric"></div>
+        <div class="metric"><label>Hunger /10</label><input id="hunger" type="number" min="1" max="10" inputmode="numeric"></div>
+        <div class="metric"><label>Sleep hrs</label><input id="sleep" inputmode="decimal" placeholder="optional"></div>
+      </div>
+      <textarea id="notes" placeholder="What went well? What made today difficult?"></textarea>
+      <div class="saveLine">Autosaves on this device as you enter it.</div>
+    </div>
+  </section>
+
+  <section class="pane" id="progressPane">
+    <div class="card">
+      <div class="progressHead">
+        <div><div class="kicker">Challenge score</div><div class="bigScore"><span id="totalScore">0</span><span style="font-size:16px;color:var(--muted)"> / 84</span></div></div>
+        <div class="pill" id="rating">Not started</div>
+      </div>
+      <div class="bar"><span id="progressBar"></span></div>
+      <div class="stats">
+        <div class="stat"><b id="gymShowups">0/6</b><span>Gym show-ups</span></div>
+        <div class="stat"><b id="fullGyms">0/6</b><span>Full workouts</span></div>
+        <div class="stat"><b id="noScrollStat">0/14</b><span>No-scroll mornings</span></div>
+        <div class="stat"><b id="perfectDays">0</b><span>Perfect days</span></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="sectionTitle">14 days <small>Tap any day to open it</small></div>
+      <div class="dayGrid" id="dayGrid"></div>
+      <div class="chart" id="scoreChart"></div>
+    </div>
+
+    <div class="card">
+      <div class="sectionTitle">Nutrition & body trend</div>
+      <div class="stats">
+        <div class="stat"><b id="mealStat">0%</b><span>Meal adherence</span></div>
+        <div class="stat"><b id="waterStat">0/14</b><span>Hydration</span></div>
+        <div class="stat"><b id="startWeight">—</b><span>Start weight</span></div>
+        <div class="stat"><b id="weightChange">—</b><span>Weight change</span></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="sectionTitle">Final report <small>Ready to export any time</small></div>
+      <div class="report" id="report"></div>
+      <div class="actions noPrint">
+        <button class="primary" id="share">Share report</button>
+        <button class="secondary" id="print">Save as PDF</button>
+        <button class="secondary" id="csv">Export CSV</button>
+        <button class="secondary" id="backup">Backup data</button>
+        <button class="secondary" id="restoreBtn">Restore backup</button>
+        <button class="danger" id="reset">Reset everything</button>
+        <input class="fileInput" type="file" id="restoreFile" accept="application/json,.json">
+      </div>
+    </div>
+
+    <div class="card flat noPrint">
+      <div class="sectionTitle">Keep it like an app</div>
+      <div class="install">
+        <b>Best practice:</b> add this page to your iPhone Home Screen, then use that same icon every day. Your ticks and notes are stored locally on that browser/app copy. Use <b>Backup data</b> occasionally so you have a recovery file if browser website data is ever cleared.
+      </div>
+    </div>
+  </section>
+</main>
+
+<nav class="tabs noPrint">
+  <button class="tab active" data-tab="today">Today</button>
+  <button class="tab" data-tab="progress">Progress</button>
+</nav>
+
+<script>
+(() => {
+  "use strict";
+  const START="2026-08-21", END="2026-09-03", KEY="reset14_20260821_v2";
+
+  const A=[
+    ["Warm-up treadmill","5 minutes",""],
+    ["Leg Press","2 × 10","kg"],
+    ["Chest Press","2 × 10","kg"],
+    ["Lat Pulldown","2 × 10","kg"],
+    ["Seated Leg Curl","2 × 10","kg"],
+    ["Easy treadmill","5 minutes",""]
+  ];
+  const B=[
+    ["Warm-up treadmill","5 minutes",""],
+    ["Leg Press or Goblet Squat","2 × 10","kg"],
+    ["Seated Cable Row","2 × 10","kg"],
+    ["Shoulder Press","2 × 10","kg"],
+    ["Leg Extension","2 × 10","kg"],
+    ["Plank","2 × 20–30 sec","sec"]
+  ];
+
+  const DAYS=[
+    {date:"2026-08-21",type:"gym",title:"Gym A · First show-up",items:A,rule:"Do not chase soreness. Your win is getting through the door."},
+    {date:"2026-08-22",type:"recovery",title:"Recovery walk",items:[["Easy walk","20 minutes",""],["Light stretching","5 minutes",""]],rule:"Make recovery deliberate, not a skipped day."},
+    {date:"2026-08-23",type:"gym",title:"Gym B",items:B,rule:"No scrolling first. Clothes on, then go."},
+    {date:"2026-08-24",type:"recovery",title:"Recovery walk",items:[["Easy walk","20 minutes",""],["Light stretching","5 minutes",""]],rule:"Keep the chain alive without exhausting yourself."},
+    {date:"2026-08-25",type:"gym",title:"Gym A",items:A,rule:"Repeat the basics. Add weight only if technique feels easy."},
+    {date:"2026-08-26",type:"recovery",title:"Recovery walk",items:[["Easy walk","20 minutes",""]],rule:"Consistency beats intensity."},
+    {date:"2026-08-27",type:"recovery",title:"Recovery + reset",items:[["Easy walk","20 minutes",""],["Light stretching","5 minutes",""]],rule:"Prepare tonight so tomorrow morning requires no decision."},
+    {date:"2026-08-28",type:"gym",title:"Gym B · Friday",items:B,rule:"Long workday later; keep the gym controlled and leave with energy."},
+    {date:"2026-08-29",type:"recovery",title:"Recovery walk",items:[["Easy walk","20 minutes",""]],rule:"You are now past the hardest first week."},
+    {date:"2026-08-30",type:"gym",title:"Gym A",items:A,rule:"Show up before your brain starts negotiating."},
+    {date:"2026-08-31",type:"recovery",title:"Recovery walk",items:[["Easy walk","20 minutes",""],["Light stretching","5 minutes",""]],rule:"Protect tomorrow’s final gym session."},
+    {date:"2026-09-01",type:"gym",title:"Gym B · Session 6",items:B,rule:"Finish the six-session target. Do not turn it into a max-effort test."},
+    {date:"2026-09-02",type:"recovery",title:"Recovery walk",items:[["Easy walk","20 minutes",""]],rule:"Notice how much easier starting feels now."},
+    {date:"2026-09-03",type:"recovery",title:"Final day + review",items:[["Easy walk","20 minutes",""],["Light stretching","5 minutes",""]],rule:"Finish the system and review the evidence, not just the scale."}
+  ];
+
+  let db=load(), selected=initialDate(), saveTimer=null;
+
+  function load(){ try{return JSON.parse(localStorage.getItem(KEY))||{}}catch(e){return {}} }
+  function save(immediate=false){
+    clearTimeout(saveTimer);
+    const work=()=>{localStorage.setItem(KEY,JSON.stringify(db));toast();};
+    immediate?work():saveTimer=setTimeout(work,120);
+  }
+  function toast(){const el=q("#toast");el.classList.add("show");clearTimeout(window._t);window._t=setTimeout(()=>el.classList.remove("show"),650)}
+  function q(s){return document.querySelector(s)} function qa(s){return [...document.querySelectorAll(s)]}
+  function parse(s){return new Date(s+"T00:00:00")}
+  function isoLocal(d){return [d.getFullYear(),String(d.getMonth()+1).padStart(2,"0"),String(d.getDate()).padStart(2,"0")].join("-")}
+  function initialDate(){
+    const now=new Date(), today=isoLocal(now);
+    if(today<START)return START;
+    if(today>END)return END;
+    return today;
+  }
+  function indexOf(date=selected){return DAYS.findIndex(x=>x.date===date)}
+  function row(date){
+    if(!db[date]) db[date]={checks:{},ex:{},loads:{},fallback:false,weight:"",energy:"",hunger:"",sleep:"",notes:"",breakfastNote:"",lunchNote:""};
+    return db[date];
+  }
+  function fullExercise(day,r){return day.items.every((_,i)=>!!r.ex[i])}
+  function exercisePoint(day,r){return fullExercise(day,r)||(day.type==="gym"&&!!r.fallback)}
+  function dayScore(day,r){
+    return [!!r.checks.noScroll,exercisePoint(day,r),!!r.checks.breakfast,!!r.checks.lunch,!!r.checks.evening,!!r.checks.water].filter(Boolean).length
+  }
+  function longDate(s){return parse(s).toLocaleDateString("en-AU",{weekday:"long",day:"numeric",month:"long",year:"numeric"})}
+  function esc(v){return String(v??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"}[c]))}
+
+  function renderToday(){
+    const i=indexOf(), d=DAYS[i], r=row(d.date);
+    q("#datePicker").value=d.date;
+    q("#dayLabel").textContent=`Day ${i+1} of 14 · ${d.type==="gym"?"Gym day":"Recovery day"}`;
+    q("#dayTitle").textContent=d.title;
+    q("#dateLong").textContent=longDate(d.date);
+    q("#ruleText").textContent=d.rule;
+    q("#exerciseTitle").textContent=d.type==="gym"?"Workout":"Movement";
+    q("#exerciseSmall").textContent=d.type==="gym"?"60–90 sec rest between sets":"easy pace";
+    q("#fallbackBox").style.display=d.type==="gym"?"block":"none";
+
+    ["outOfBed","noScroll","breakfast","lunch","evening","water"].forEach(id=>q("#"+id).checked=!!r.checks[id]);
+    q("#fallback").checked=!!r.fallback;
+    ["weight","energy","hunger","sleep","notes","breakfastNote","lunchNote"].forEach(id=>q("#"+id).value=r[id]??"");
+
+    q("#exerciseRows").innerHTML=d.items.map((it,j)=>`
+      <div class="exerciseRow">
+        <input type="checkbox" id="ex_${j}" data-ex="${j}" ${r.ex[j]?"checked":""}>
+        <div class="exMain"><b>${esc(it[0])}</b><span>${esc(it[1])}</span></div>
+        ${it[2]?`<input class="loadInput" inputmode="decimal" data-load="${j}" value="${esc(r.loads[j]||"")}" placeholder="${it[2]}">`:`<span></span>`}
+      </div>`).join("");
+
+    qa("[data-ex]").forEach(el=>el.onchange=e=>{row(d.date).ex[e.target.dataset.ex]=e.target.checked;save();updateDayScore();renderProgress()});
+    qa("[data-load]").forEach(el=>el.oninput=e=>{row(d.date).loads[e.target.dataset.load]=e.target.value;save()});
+
+    q("#prev").disabled=i===0; q("#next").disabled=i===13;
+    updateDayScore();
+  }
+
+  function updateDayScore(){
+    const d=DAYS[indexOf()],r=row(d.date),s=dayScore(d,r);
+    q("#dayScore").textContent=s; q("#ring").style.setProperty("--p",String((s/6)*100));
+    const full=fullExercise(d,r), point=exercisePoint(d,r);
+    q("#exerciseStatus").textContent=full?"Full target complete ✓":point?"10-minute show-up ✓":"Not complete";
+    q("#exerciseStatus").classList.toggle("good",point);
+  }
+
+  function totals(){
+    let score=0,show=0,full=0,noScroll=0,perfect=0,water=0,mealChecks=0;
+    DAYS.forEach(d=>{
+      const r=row(d.date),s=dayScore(d,r);score+=s;
+      if(d.type==="gym"&&(fullExercise(d,r)||r.fallback))show++;
+      if(d.type==="gym"&&fullExercise(d,r))full++;
+      if(r.checks.noScroll)noScroll++;
+      if(s===6)perfect++;
+      if(r.checks.water)water++;
+      ["breakfast","lunch","evening"].forEach(k=>{if(r.checks[k])mealChecks++})
+    });
+    return {score,show,full,noScroll,perfect,water,mealChecks};
+  }
+
+  function weightStats(){
+    const vals=DAYS.map(d=>parseFloat(row(d.date).weight)).filter(Number.isFinite);
+    if(!vals.length)return {start:null,last:null,change:null};
+    return {start:vals[0],last:vals[vals.length-1],change:vals[vals.length-1]-vals[0]};
+  }
+  function rating(s){if(s>=75)return"Outstanding 🔥";if(s>=65)return"Excellent 💪";if(s>=55)return"Good start";if(s>=45)return"Habit forming";return s?"Building":"Not started"}
+
+  function renderProgress(){
+    const t=totals(),w=weightStats();
+    q("#totalScore").textContent=t.score; q("#rating").textContent=rating(t.score); q("#progressBar").style.width=(t.score/84*100)+"%";
+    q("#gymShowups").textContent=`${t.show}/6`; q("#fullGyms").textContent=`${t.full}/6`; q("#noScrollStat").textContent=`${t.noScroll}/14`; q("#perfectDays").textContent=t.perfect;
+    q("#mealStat").textContent=Math.round(t.mealChecks/42*100)+"%"; q("#waterStat").textContent=`${t.water}/14`;
+    q("#startWeight").textContent=w.start==null?"—":w.start.toFixed(1)+" kg";
+    q("#weightChange").textContent=w.change==null?"—":(w.change>0?"+":"")+w.change.toFixed(1)+" kg";
+
+    q("#dayGrid").innerHTML=DAYS.map((d,i)=>{
+      const s=dayScore(d,row(d.date)),cls=s===6?"perfect":s>0?"partial":"";
+      return `<button class="dayTile ${cls} ${d.date===selected?"selected":""}" data-date="${d.date}"><div><b>${i+1}</b><br><small>${s}/6</small></div></button>`
+    }).join("");
+    qa("[data-date]").forEach(el=>el.onclick=()=>{selected=el.dataset.date;renderToday();renderProgress();switchTab("today")});
+
+    q("#scoreChart").innerHTML=DAYS.map((d,i)=>{
+      const s=dayScore(d,row(d.date)); return `<div class="chartCol"><div class="chartBar" style="height:${Math.max(3,s/6*88)}px;opacity:${s?1:.18}"></div><small>${i+1}</small></div>`
+    }).join("");
+    q("#report").textContent=makeReport();
+  }
+
+  function makeReport(){
+    const t=totals(),w=weightStats();
+    const cnt=k=>DAYS.filter(d=>row(d.date).checks[k]).length;
+    let lines=[
+      "14-DAY RESET CHALLENGE REPORT",
+      "21 August – 3 September 2026","",
+      `Overall score: ${t.score}/84 (${Math.round(t.score/84*100)}%)`,
+      `Rating: ${rating(t.score)}`,
+      `Gym show-ups: ${t.show}/6`,
+      `Full gym workouts: ${t.full}/6`,
+      `No-scroll mornings: ${t.noScroll}/14`,
+      `Breakfast on plan: ${cnt("breakfast")}/14`,
+      `Lunch on plan: ${cnt("lunch")}/14`,
+      `Evening rule: ${cnt("evening")}/14`,
+      `Hydration: ${cnt("water")}/14`,
+      `Perfect days: ${t.perfect}/14`,"",
+      `Start weight: ${w.start==null?"—":w.start.toFixed(1)+" kg"}`,
+      `Latest weight: ${w.last==null?"—":w.last.toFixed(1)+" kg"}`,
+      `Weight change: ${w.change==null?"—":(w.change>0?"+":"")+w.change.toFixed(1)+" kg"}`,
+      "","DAILY LOG"
+    ];
+    DAYS.forEach((d,i)=>{const r=row(d.date);lines.push(`${String(i+1).padStart(2,"0")} · ${d.date} · ${dayScore(d,r)}/6 · ${d.title}${r.notes?" · "+r.notes:""}`)})
+    return lines.join("\n");
+  }
+
+  function switchTab(tab){
+    qa(".tab").forEach(x=>x.classList.toggle("active",x.dataset.tab===tab));
+    q("#todayPane").classList.toggle("active",tab==="today");q("#progressPane").classList.toggle("active",tab==="progress");
+    if(tab==="progress")renderProgress();window.scrollTo({top:0,behavior:"smooth"})
+  }
+
+  ["outOfBed","noScroll","breakfast","lunch","evening","water"].forEach(id=>q("#"+id).onchange=e=>{row(selected).checks[id]=e.target.checked;save();updateDayScore();renderProgress()});
+  q("#fallback").onchange=e=>{row(selected).fallback=e.target.checked;save();updateDayScore();renderProgress()};
+  ["weight","energy","hunger","sleep","notes","breakfastNote","lunchNote"].forEach(id=>q("#"+id).oninput=e=>{row(selected)[id]=e.target.value;save();renderProgress()});
+
+  q("#datePicker").onchange=e=>{if(!e.target.value)return;selected=e.target.value<START?START:e.target.value>END?END:e.target.value;renderToday();renderProgress()};
+  q("#prev").onclick=()=>{selected=DAYS[Math.max(0,indexOf()-1)].date;renderToday();renderProgress()};
+  q("#next").onclick=()=>{selected=DAYS[Math.min(13,indexOf()+1)].date;renderToday();renderProgress()};
+  qa(".tab").forEach(x=>x.onclick=()=>switchTab(x.dataset.tab));
+
+  q("#share").onclick=async()=>{const text=makeReport();try{if(navigator.share)await navigator.share({title:"14-Day Reset Report",text});else{await navigator.clipboard.writeText(text);alert("Report copied.")}}catch(e){}};
+  q("#print").onclick=()=>window.print();
+  q("#csv").onclick=()=>{
+    const rows=[["Day","Date","Type","Score","Gym full","Gym fallback","No scroll","Breakfast","Lunch","Evening","Water","Weight","Energy","Hunger","Sleep","Notes"]];
+    DAYS.forEach((d,i)=>{const r=row(d.date);rows.push([i+1,d.date,d.type,dayScore(d,r),fullExercise(d,r),!!r.fallback,!!r.checks.noScroll,!!r.checks.breakfast,!!r.checks.lunch,!!r.checks.evening,!!r.checks.water,r.weight||"",r.energy||"",r.hunger||"",r.sleep||"",r.notes||""])});
+    download("14-day-reset-report.csv",rows.map(x=>x.map(v=>`"${String(v).replaceAll('"','""')}"`).join(",")).join("\n"),"text/csv");
+  };
+  q("#backup").onclick=()=>download("14-day-reset-backup.json",JSON.stringify({version:2,start:START,data:db},null,2),"application/json");
+  q("#restoreBtn").onclick=()=>q("#restoreFile").click();
+  q("#restoreFile").onchange=async e=>{
+    const f=e.target.files?.[0];if(!f)return;
+    try{const obj=JSON.parse(await f.text());const incoming=obj.data||obj;if(!incoming||typeof incoming!=="object")throw new Error();db=incoming;save(true);renderToday();renderProgress();alert("Backup restored.");}
+    catch{alert("That backup file could not be read.")} finally{e.target.value=""}
+  };
+  q("#reset").onclick=()=>{if(confirm("Delete all 14-day challenge entries from this device?")){localStorage.removeItem(KEY);db={};renderToday();renderProgress()}};
+
+  function download(name,text,type){const blob=new Blob([text],{type:type+";charset=utf-8"}),u=URL.createObjectURL(blob),a=document.createElement("a");a.href=u;a.download=name;document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(u),800)}
+
+  const today=isoLocal(new Date());
+  if(today>=START)q("#startNotice").style.display="none";
+  q("#headerPill").textContent=today<START?"Starts tomorrow":today>END?"Challenge complete":`Day ${indexOf(today)+1} / 14`;
+
+  renderToday();renderProgress();
+})();
+</script>
+</body>
+</html>
