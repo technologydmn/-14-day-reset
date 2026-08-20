@@ -1,190 +1,237 @@
-Continue in the existing isolated worktree:
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0b1730">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="14-Day Reset">
+<link rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAIAAACyr5FlAAAEJUlEQVR4nO3dsXHcVhiFUdLjXI6daMYtKHQZ7sVFuBeXoTYcOnYJDjCzs2PzUqvFew8X4DmhRGmwDx9+YIEl+frp85cXeMsPR28AvcRBJA4icRCJg0gcROIgEgeROIjEQSQOInEQiYNIHETiIBIHkTiIxEEkDiJxEImD6MejNyD656+vR2/COj/98uvRm/CG16pvTfhQQSQ9oVTEoYk3HV7JkXFo4kFHVXLYBakyHnfUWh0wOWTxtMUjZPXkUMYei1dv3eSQxUBrRsiiyaGMsdas54o4lDHDglWdHocy5pm9tnPjUMZsU1d4YhzKWGPeOs+KQxkrTVptj+yJpsRhbKw3Y83Hx6GMowxfeacVosFxGBvHGrv+I+NQRoOBe8FphUgcRMPicE7pMWpfmBxE4iAaE4dzSpshe8TkIBIHkTiIBsThgqPT/v1ichCJg0gcROIgEgeROIjEQSQOInEQiYNIHETiIBIHkTiIxEEkDiJxEImDqPf3rdwc/ssD5in/hGV1HBfOYrO9wNpESuO4fBb3ahNpvOb4UGXcFL7qxjgoURdH4QG0TNtrr4uDHl1xtB0661WtQFccVBEHkTiIxEHUFUfhXcLFqlagKw6q1MVRdegs1vba6+KgR2McbQfQGoWvuvSR/bZSVbcL5ynMYlMax+byidRmsamOY1O+ghfWeM1BCXEQiYNIHETiIBIHkTiIxEF0gptgV/Lz77/9/w///uPP9VvyCHEs8mYW939VmMgJ4mh7tvLE7fx3yrj/mrY+Xj99/rLzv5j37KMti3sPvupHsviPgYnsXMDSydGcxab2W+MHany30l/Gzfub+sTYePpfzdAYxzXs2cclfdTFcaKxsTndBj+uLo5r2H/oNwyPrjhOehSedLO/qSsOqoiDSBxE4iDqiuOkNxxPutnf1BXHZex/PtLwEK4ujtMdhafb4MfVxXEZew79hrHx0hnHiY7F9zf1uX1cUsZL7SP7/m+hPlHBT6v+sM+mLZFJnwR7mTAzdi7dCeK4hm/2MeNscs1Pgl3Ptu99+pyotoM3Nb5boYQ4iMRBJA4icRCJg0gcROIgGhBH27MPNvv3i8lBJA4icRCNicNlR5she8TkIBIH0bA4nFl6jNoXJgeROIhGxuHM0mDgXhg8OfRxrLHr77RCND4Ow+Mow1d+yuTQx3oz1txphWhWHIbHSpNWe+Lk0Mca89Z57mlFH7NNXeHp1xz6mGf22q64INXHDAtWddG7FX2MtWY9B/zwlu/iJ73stPIwW32fwwjZY/HqrZ4cN0bIdznkoDrsDqkR8rij1uqwyXHPFHnT4cdPRRw3KnkpaOKmK457HyqUniDu9cbB4TyyJxIHkTiIxEEkDiJxEImDSBxE4iASB5E4iMRBJA4icRCJg0gcROIgEgeROIjEQfQvnK0Fx0w3P8sAAAAASUVORK5CYII=">
+<title>14-Day Reset Challenge</title>
+<style>
+:root{
+  --bg:#f4f6fb;
+  --paper:#ffffff;
+  --paper2:#f7f8fc;
+  --ink:#111b2f;
+  --muted:#748097;
+  --line:#e4e8f0;
+  --navy:#0b1730;
+  --navy2:#132a50;
+  --blue:#4361ee;
+  --blue2:#6f83f4;
+  --teal:#14a783;
+  --teal2:#35c7a4;
+  --amber:#e7a92f;
+  --coral:#ec725f;
+  --violet:#7658d6;
+  --greenBg:#e9f8f3;
+  --blueBg:#eef1ff;
+  --amberBg:#fff7e6;
+  --coralBg:#fff0ed;
+  --violetBg:#f3efff;
+  --danger:#c73a2e;
+  --shadow:0 16px 45px rgba(24,39,75,.09);
+  --shadow2:0 8px 24px rgba(24,39,75,.07);
+  --radius:22px;
+}
+*{box-sizing:border-box}
+html{background:var(--bg);scroll-behavior:smooth}
+body{margin:0;background:linear-gradient(180deg,#eef2f9 0,#f7f8fb 250px,var(--bg) 100%);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased}
+button,input,textarea{font:inherit}button{cursor:pointer}.app{max-width:780px;margin:0 auto;min-height:100dvh;padding:calc(14px + env(safe-area-inset-top)) 14px calc(118px + env(safe-area-inset-bottom))}
+.header{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:4px 2px 14px}.brand{display:flex;align-items:center;gap:11px}.logo{width:46px;height:46px;border-radius:15px;background:linear-gradient(145deg,var(--navy),#244978);box-shadow:0 10px 24px rgba(11,23,48,.25);display:grid;place-items:center}.logo svg{width:25px;height:25px;color:white}.brandText b{display:block;font-size:18px;letter-spacing:-.025em}.brandText span{display:block;font-size:11px;color:var(--muted);margin-top:2px}.statusPill{border:1px solid rgba(67,97,238,.18);background:rgba(255,255,255,.82);backdrop-filter:blur(10px);border-radius:999px;padding:8px 10px;font-size:11px;font-weight:850;color:var(--blue);white-space:nowrap}
+.notice{position:relative;overflow:hidden;background:linear-gradient(135deg,#0b1730 0,#183a68 62%,#315f95 100%);color:white;border-radius:20px;padding:16px 17px;margin:3px 0 12px;box-shadow:0 14px 32px rgba(11,23,48,.18)}.notice:after{content:"";position:absolute;width:150px;height:150px;border-radius:50%;right:-54px;top:-70px;background:rgba(255,255,255,.08)}.notice b{display:block;font-size:15px;margin-bottom:3px;position:relative;z-index:1}.notice span{font-size:12px;opacity:.8;line-height:1.45;position:relative;z-index:1}
+.card{background:rgba(255,255,255,.96);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow2);padding:16px;margin:11px 0}.card.glass{background:rgba(255,255,255,.84);backdrop-filter:blur(16px)}.card.flat{box-shadow:none}.sectionAccent{position:relative;overflow:hidden}.sectionAccent:before{content:"";position:absolute;left:0;top:18px;bottom:18px;width:4px;border-radius:0 6px 6px 0;background:var(--sectionColor,var(--blue))}
+.dateNav{display:grid;grid-template-columns:44px 1fr 44px;gap:8px;align-items:center}.iconBtn{height:44px;border:1px solid var(--line);border-radius:13px;background:var(--paper);font-size:21px;font-weight:800;color:var(--ink);transition:.16s}.iconBtn:active{transform:scale(.96)}.iconBtn:disabled{opacity:.3}.dateNav input[type=date]{width:100%;height:44px;border:1px solid var(--line);border-radius:13px;padding:0 12px;background:white;color:var(--ink);font-weight:800}
+.hero{position:relative;overflow:hidden;border-radius:24px;padding:18px;color:white;background:linear-gradient(135deg,#0b1730 0,#173660 58%,#2d5d96 100%);box-shadow:0 18px 42px rgba(11,23,48,.2);margin:11px 0}.hero:before{content:"";position:absolute;width:240px;height:240px;border-radius:50%;right:-110px;top:-125px;background:radial-gradient(circle,rgba(111,131,244,.55),rgba(111,131,244,0) 66%)}.heroGrid{display:grid;grid-template-columns:1fr 84px;gap:14px;align-items:center;position:relative;z-index:1}.dayLabel{text-transform:uppercase;letter-spacing:.1em;font-size:10px;color:#bfc9dd;font-weight:900}.dayTitle{font-size:25px;line-height:1.07;font-weight:920;letter-spacing:-.035em;margin:5px 0}.dateLong{font-size:12px;color:#d4dbea}.ring{--p:0;width:82px;height:82px;border-radius:50%;display:grid;place-items:center;background:conic-gradient(#86a0ff calc(var(--p)*1%),rgba(255,255,255,.16) 0);position:relative}.ring:after{content:"";position:absolute;inset:7px;border-radius:50%;background:#102544}.ringInside{position:relative;z-index:1;text-align:center}.ringInside b{display:block;font-size:23px;line-height:1}.ringInside small{font-size:9px;color:#bfc9dd;font-weight:800}.rule{position:relative;z-index:1;margin-top:14px;padding:11px 12px;border-radius:13px;background:rgba(255,255,255,.09);display:flex;justify-content:space-between;gap:10px;font-size:12px}.rule span{color:#cbd4e5}.rule b{text-align:right}
+.sectionTitle{font-size:14px;font-weight:900;margin:1px 0 8px;display:flex;justify-content:space-between;gap:8px;align-items:center}.sectionTitle .titleWrap{display:flex;align-items:center;gap:8px}.sectionIcon{width:28px;height:28px;border-radius:9px;display:grid;place-items:center;background:var(--iconBg,var(--blueBg));color:var(--iconColor,var(--blue))}.sectionIcon svg{width:15px;height:15px}.sectionTitle small{font-size:10px;color:var(--muted);font-weight:800}
+.check{display:grid;grid-template-columns:29px 1fr auto;align-items:center;gap:9px;padding:12px 2px;border-top:1px solid #edf0f5}.check.first{border-top:0}.check input[type=checkbox],.exerciseRow input[type=checkbox]{appearance:none;width:24px;height:24px;border:2px solid #c4cad6;border-radius:8px;margin:0;display:grid;place-items:center;background:white;transition:.15s}.check input[type=checkbox]:checked,.exerciseRow input[type=checkbox]:checked{background:var(--checkColor,var(--blue));border-color:var(--checkColor,var(--blue));box-shadow:0 4px 12px color-mix(in srgb,var(--checkColor,var(--blue)) 25%,transparent)}.check input[type=checkbox]:checked:after,.exerciseRow input[type=checkbox]:checked:after{content:"✓";font-size:15px;color:white;font-weight:950}.check label{font-size:14px;font-weight:760;line-height:1.25}.meta{font-size:10px;color:var(--muted);font-weight:800;text-align:right}
+.exerciseRow{display:grid;grid-template-columns:29px 1fr 76px;gap:9px;align-items:center;padding:11px 2px;border-top:1px solid #edf0f5;--checkColor:var(--blue)}.exerciseRow:first-child{border-top:0}.exMain b{font-size:13px;display:block}.exMain span{font-size:10px;color:var(--muted);display:block;margin-top:2px}.loadInput{width:100%;height:35px;border:1px solid var(--line);border-radius:10px;background:var(--paper2);padding:0 7px;font-size:12px;text-align:center;color:var(--ink);font-weight:750}.fallback{margin-top:10px;padding:11px;background:var(--amberBg);border:1px solid #f0dcab;border-radius:13px}.fallback .check{border:0;padding:0;--checkColor:var(--amber)}.fallback p{margin:7px 0 0 33px;font-size:10px;color:#7b5a18;line-height:1.4}.completion{display:flex;justify-content:space-between;gap:8px;margin-top:10px;padding:10px 11px;background:var(--paper2);border-radius:12px;font-size:11px}.good{color:var(--teal)!important}
+.foodHint{font-size:11px;color:var(--muted);line-height:1.45;padding:8px 10px;background:var(--paper2);border-radius:10px;margin:3px 0 5px}.miniInput{width:100%;height:39px;border:1px solid var(--line);border-radius:11px;padding:0 10px;background:white;color:var(--ink);margin-top:6px;font-size:12px}.metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:7px}.metric label{display:block;text-transform:uppercase;letter-spacing:.055em;color:var(--muted);font-size:9px;font-weight:900;margin:0 0 5px 2px}.metric input{width:100%;height:40px;border:1px solid var(--line);border-radius:11px;padding:0 8px;background:var(--paper2);color:var(--ink);font-weight:750;font-size:12px}textarea{width:100%;min-height:80px;margin-top:9px;border:1px solid var(--line);border-radius:12px;padding:10px;background:var(--paper2);color:var(--ink);font-size:12px;resize:vertical}.saveLine{font-size:10px;color:var(--muted);margin-top:7px;text-align:right}
+.tabs{position:fixed;z-index:20;left:50%;transform:translateX(-50%);bottom:calc(11px + env(safe-area-inset-bottom));width:min(510px,calc(100% - 26px));display:grid;grid-template-columns:1fr 1fr;gap:5px;padding:5px;background:rgba(255,255,255,.92);backdrop-filter:blur(18px);border:1px solid rgba(218,224,235,.9);border-radius:18px;box-shadow:0 16px 42px rgba(20,34,62,.18)}.tab{height:49px;border:0;border-radius:13px;background:transparent;color:var(--muted);font-weight:900;display:flex;align-items:center;justify-content:center;gap:7px}.tab svg{width:16px;height:16px}.tab.active{background:linear-gradient(135deg,var(--navy),#234a7e);color:white;box-shadow:0 7px 18px rgba(11,23,48,.22)}.pane{display:none}.pane.active{display:block}
+.analyticsHero{background:linear-gradient(135deg,#0b1730 0,#173660 62%,#2c5b93 100%);color:white;border:0;box-shadow:0 18px 42px rgba(11,23,48,.2);position:relative;overflow:hidden}.analyticsHero:after{content:"";position:absolute;width:190px;height:190px;right:-72px;top:-95px;border-radius:50%;background:rgba(111,131,244,.23)}.progressHead{display:flex;justify-content:space-between;align-items:flex-end;gap:8px;position:relative;z-index:1}.progressHead .label{font-size:10px;text-transform:uppercase;letter-spacing:.1em;color:#bfc9dd;font-weight:900}.bigScore{font-size:42px;font-weight:950;letter-spacing:-.05em;line-height:1;margin-top:3px}.bigScore small{font-size:16px;color:#bfc9dd}.gradePill{border-radius:999px;padding:8px 11px;font-size:11px;font-weight:900;background:rgba(255,255,255,.12);color:white;border:1px solid rgba(255,255,255,.15);position:relative;z-index:1}.bar{height:10px;background:rgba(255,255,255,.12);border-radius:999px;overflow:hidden;margin-top:14px;position:relative;z-index:1}.bar span{display:block;height:100%;background:linear-gradient(90deg,#6f83f4,#35c7a4);border-radius:inherit;width:0}.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:12px}.stat{background:var(--paper2);padding:11px;border-radius:13px;min-width:0;border:1px solid #edf0f5}.analyticsHero .stat{background:rgba(255,255,255,.09);border-color:rgba(255,255,255,.08)}.stat b{font-size:17px;display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.analyticsHero .stat b{color:white}.stat span{font-size:9px;color:var(--muted);font-weight:800;line-height:1.2;display:block;margin-top:2px}.analyticsHero .stat span{color:#c8d1e1}
+.kpiGrid{display:grid;grid-template-columns:repeat(2,1fr);gap:9px}.kpi{border-radius:17px;padding:13px;border:1px solid var(--line);background:white;min-height:92px}.kpi .kpiTop{display:flex;align-items:center;justify-content:space-between;gap:8px}.kpi .kpiIcon{width:31px;height:31px;border-radius:10px;display:grid;place-items:center;background:var(--kbg);color:var(--kc)}.kpi .kpiIcon svg{width:16px;height:16px}.kpi b{font-size:22px;display:block;margin-top:10px;letter-spacing:-.03em}.kpi span{font-size:10px;color:var(--muted);font-weight:800}
+.dayGrid{display:grid;grid-template-columns:repeat(7,1fr);gap:6px}.dayTile{aspect-ratio:1;border:1px solid var(--line);background:white;border-radius:11px;display:grid;place-items:center;padding:3px;color:var(--ink)}.dayTile b{font-size:12px;line-height:1}.dayTile small{font-size:8px;color:var(--muted);font-weight:850}.dayTile.perfect{background:var(--greenBg);border-color:#b7e2d5;color:var(--teal)}.dayTile.partial{background:var(--amberBg);border-color:#f0dca9;color:#9a6912}.dayTile.selected{outline:2px solid var(--blue);outline-offset:2px}.chartWrap{margin-top:12px;background:var(--paper2);border-radius:15px;padding:12px}.chartHeader{display:flex;justify-content:space-between;align-items:end;gap:10px;margin-bottom:8px}.chartHeader b{font-size:12px}.chartHeader span{font-size:9px;color:var(--muted);font-weight:800}.chart{display:grid;grid-template-columns:repeat(14,1fr);align-items:end;height:118px;gap:4px}.chartCol{display:flex;flex-direction:column;justify-content:flex-end;align-items:center;height:100%;gap:5px}.chartBar{width:100%;max-width:24px;border-radius:7px 7px 3px 3px;min-height:3px;background:linear-gradient(180deg,var(--blue2),var(--blue));box-shadow:0 5px 12px rgba(67,97,238,.18)}.chartCol small{font-size:7px;color:var(--muted);font-weight:850}
+.habitList{display:grid;gap:10px}.habitRow{display:grid;grid-template-columns:96px 1fr 38px;gap:9px;align-items:center}.habitRow label{font-size:10px;font-weight:850;color:var(--ink)}.habitTrack{height:9px;border-radius:99px;background:#edf0f5;overflow:hidden}.habitTrack i{display:block;height:100%;border-radius:99px;background:var(--hc,var(--blue));width:0}.habitRow b{font-size:10px;text-align:right;color:var(--muted)}
+.insight{display:flex;gap:11px;align-items:flex-start;padding:13px;border-radius:15px;background:linear-gradient(135deg,#f0f3ff,#f8fbff);border:1px solid #dce3ff}.insightIcon{width:34px;height:34px;flex:0 0 auto;border-radius:11px;background:white;display:grid;place-items:center;color:var(--blue);box-shadow:var(--shadow2)}.insightIcon svg{width:17px;height:17px}.insight b{font-size:12px;display:block}.insight p{font-size:10px;color:var(--muted);line-height:1.5;margin:3px 0 0}
+.dualGrid{display:grid;grid-template-columns:1fr 1fr;gap:9px}.miniPanel{background:var(--paper2);border:1px solid #edf0f5;border-radius:16px;padding:12px;min-width:0}.miniPanel .miniHead{display:flex;justify-content:space-between;gap:8px;align-items:start}.miniPanel .miniHead b{font-size:11px}.miniPanel .miniHead span{font-size:9px;color:var(--muted);font-weight:800}.spark{width:100%;height:72px;margin-top:6px;display:block}.spark .gridLine{stroke:#e6eaf1;stroke-width:1}.spark .line{fill:none;stroke:var(--spark,var(--blue));stroke-width:3;stroke-linecap:round;stroke-linejoin:round}.spark .area{fill:color-mix(in srgb,var(--spark,var(--blue)) 13%,transparent)}.emptyChart{height:72px;display:grid;place-items:center;color:var(--muted);font-size:10px;text-align:center}
+.report{font-size:11px;line-height:1.55;white-space:pre-wrap;background:var(--paper2);padding:11px;border-radius:12px;max-height:330px;overflow:auto}.actions{display:grid;grid-template-columns:1fr 1fr;gap:7px;margin-top:9px}.primary,.secondary,.danger{min-height:43px;border-radius:12px;padding:0 10px;font-weight:850;font-size:12px}.primary{background:linear-gradient(135deg,var(--navy),#254d82);color:white;border:1px solid var(--navy)}.secondary{background:var(--paper);color:var(--ink);border:1px solid var(--line)}.danger{background:#fff6f5;color:var(--danger);border:1px solid #efc0bb}.install{font-size:11px;line-height:1.55;color:var(--muted)}.install b{color:var(--ink)}.toast{position:fixed;z-index:50;top:calc(10px + env(safe-area-inset-top));left:50%;transform:translate(-50%,-8px);opacity:0;background:var(--navy);color:white;border-radius:999px;padding:9px 13px;font-size:10px;font-weight:900;pointer-events:none;transition:.18s;box-shadow:0 10px 24px rgba(11,23,48,.2)}.toast.show{opacity:1;transform:translate(-50%,0)}.fileInput{display:none}
+@media(max-width:560px){.app{padding-left:11px;padding-right:11px}.header .statusPill{display:none}.metrics{grid-template-columns:1fr 1fr}.stats{grid-template-columns:1fr 1fr}.exerciseRow{grid-template-columns:29px 1fr 67px}.heroGrid{grid-template-columns:1fr 78px}.ring{width:76px;height:76px}.dualGrid{grid-template-columns:1fr}.habitRow{grid-template-columns:84px 1fr 36px}.dayTitle{font-size:23px}}
+@media print{body{background:white}.tabs,.noPrint,.toast{display:none!important}.app{max-width:none;padding:0}.pane{display:none!important}#progressPane{display:block!important}.card,.analyticsHero{box-shadow:none;break-inside:avoid}.analyticsHero{color:black;background:white;border:1px solid #ddd}.analyticsHero .label,.analyticsHero .stat span,.bigScore small{color:#555}.analyticsHero .stat{background:#f7f7f7;border-color:#eee}.analyticsHero .stat b{color:#111}}
+</style>
+</head>
+<body>
+<div class="toast" id="toast">Saved ✓</div>
+<main class="app">
+  <header class="header">
+    <div class="brand">
+      <div class="logo" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round"><path d="M5 7h14M7 12h10M9 17h6"/></svg></div>
+      <div class="brandText"><b>14-Day Reset</b><span>Gym & nutrition challenge</span></div>
+    </div>
+    <div class="statusPill" id="headerPill">Starts tomorrow</div>
+  </header>
 
-`C:\Users\rjkha\Documents\Galha-shared-catalogue-package-2`
+  <div class="notice" id="startNotice"><b>Day 1 is tomorrow — Friday 21 August</b><span>Your first task is Gym A. Open this tomorrow and Day 1 will be selected automatically.</span></div>
 
-Do not create another folder, worktree, branch, or thread. Preserve the current uncommitted Package 2 implementation.
+  <section class="pane active" id="todayPane">
+    <div class="card glass noPrint"><div class="dateNav"><button class="iconBtn" id="prev" aria-label="Previous day">‹</button><input type="date" id="datePicker" min="2026-08-21" max="2026-09-03"><button class="iconBtn" id="next" aria-label="Next day">›</button></div></div>
 
-PACKAGE 2 — FINAL ENGINEERING QUALIFICATION PASS
+    <div class="hero">
+      <div class="heroGrid">
+        <div><div class="dayLabel" id="dayLabel"></div><div class="dayTitle" id="dayTitle"></div><div class="dateLong" id="dateLong"></div></div>
+        <div class="ring" id="ring"><div class="ringInside"><b id="dayScore">0</b><small>/ 6 today</small></div></div>
+      </div>
+      <div class="rule"><span>Today’s rule</span><b id="ruleText"></b></div>
+    </div>
 
-1. SCOPE
+    <div class="card sectionAccent" style="--sectionColor:var(--violet)">
+      <div class="sectionTitle"><div class="titleWrap"><div class="sectionIcon" style="--iconBg:var(--violetBg);--iconColor:var(--violet)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v18M5 8h14M7 16h10"/></svg></div>Morning</div><small>Build the automatic start</small></div>
+      <div class="check first" style="--checkColor:var(--violet)"><input type="checkbox" id="outOfBed"><label for="outOfBed">Out of bed by 7:35</label><div class="meta">bonus</div></div>
+      <div class="check" style="--checkColor:var(--violet)"><input type="checkbox" id="noScroll"><label for="noScroll">No scrolling before morning routine</label><div class="meta">1 point</div></div>
+    </div>
 
-The Package 2 functionality and additive API contracts are now accepted. Do not redesign or expand them.
+    <div class="card sectionAccent" style="--sectionColor:var(--blue)">
+      <div class="sectionTitle"><div class="titleWrap"><div class="sectionIcon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 10v4M7 8v8M17 8v8M20 10v4M7 12h10"/></svg></div><span id="exerciseTitle">Workout</span></div><small id="exerciseSmall"></small></div>
+      <div id="exerciseRows"></div>
+      <div class="fallback" id="fallbackBox"><div class="check first"><input type="checkbox" id="fallback"><label for="fallback">10-minute minimum completed instead</label><div class="meta">show-up win</div></div><p>Use this only on a rough gym morning. It keeps the habit alive without pretending you completed the full workout.</p></div>
+      <div class="completion"><span>Exercise point</span><b id="exerciseStatus">Not complete</b></div>
+    </div>
 
-Freeze:
+    <div class="card sectionAccent" style="--sectionColor:var(--teal)">
+      <div class="sectionTitle"><div class="titleWrap"><div class="sectionIcon" style="--iconBg:var(--greenBg);--iconColor:var(--teal)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21c5-2 7-7 7-12-5 0-9 2-11 6-1 2-1 4 0 6M8 17c2-3 5-5 9-7"/></svg></div>Meals & hydration</div><small>Simple, not extreme</small></div>
+      <div class="check first" style="--checkColor:var(--teal)"><input type="checkbox" id="breakfast"><label for="breakfast">Breakfast on plan</label><div class="meta">9:30 AM</div></div>
+      <div class="foodHint">Protein + whole-food carbohydrate + fruit/vegetables. Example: eggs + wholegrain toast + fruit.</div><input class="miniInput" id="breakfastNote" placeholder="Optional: what did you eat?">
+      <div class="check" style="--checkColor:var(--teal)"><input type="checkbox" id="lunch"><label for="lunch">Lunch on plan</label><div class="meta">2:30 PM</div></div>
+      <div class="foodHint">Aim for ½ vegetables, ¼ protein and ¼ rice/roti/potato. Keep this as your main meal.</div><input class="miniInput" id="lunchNote" placeholder="Optional: what did you eat?">
+      <div class="check" style="--checkColor:var(--teal)"><input type="checkbox" id="evening"><label for="evening">Evening rule followed</label><div class="meta">1 point</div></div>
+      <div class="foodHint">No mindless evening snacking. If genuinely hungry, a small nutritious protein-based meal still counts as on-plan.</div>
+      <div class="check" style="--checkColor:var(--teal)"><input type="checkbox" id="water"><label for="water">Hydration goal met</label><div class="meta">1 point</div></div>
+    </div>
 
-* collection-filtered cursor browsing;
-* authoritative preview classifications;
-* duplicate/category/unit/package/configuration handling;
-* Package 1 activation writer and idempotency;
-* existing Shared Catalogue UX and entry points;
-* page-bounded “Select all shown”;
-* deferred whole-category selection.
+    <div class="card sectionAccent" style="--sectionColor:var(--coral)">
+      <div class="sectionTitle"><div class="titleWrap"><div class="sectionIcon" style="--iconBg:var(--coralBg);--iconColor:var(--coral)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h4l2-5 4 10 2-5h6"/></svg></div>Night check-in</div><small>30 seconds</small></div>
+      <div class="metrics"><div class="metric"><label>Weight kg</label><input id="weight" inputmode="decimal" placeholder="optional"></div><div class="metric"><label>Energy /10</label><input id="energy" type="number" min="1" max="10" inputmode="numeric"></div><div class="metric"><label>Hunger /10</label><input id="hunger" type="number" min="1" max="10" inputmode="numeric"></div><div class="metric"><label>Sleep hrs</label><input id="sleep" inputmode="decimal" placeholder="optional"></div></div>
+      <textarea id="notes" placeholder="What went well? What made today difficult?"></textarea><div class="saveLine">Autosaves on this device as you enter it.</div>
+    </div>
+  </section>
 
-This pass is only for completing qualification evidence and fixing genuine issues discovered by that evidence.
+  <section class="pane" id="progressPane">
+    <div class="card analyticsHero">
+      <div class="progressHead"><div><div class="label">Challenge score</div><div class="bigScore"><span id="totalScore">0</span><small> / 84</small></div></div><div class="gradePill" id="rating">Not started</div></div>
+      <div class="bar"><span id="progressBar"></span></div>
+      <div class="stats"><div class="stat"><b id="gymShowups">0/6</b><span>Gym show-ups</span></div><div class="stat"><b id="fullGyms">0/6</b><span>Full workouts</span></div><div class="stat"><b id="noScrollStat">0/14</b><span>No-scroll mornings</span></div><div class="stat"><b id="perfectDays">0</b><span>Perfect days</span></div></div>
+    </div>
 
-2. SAFETY
+    <div class="card">
+      <div class="sectionTitle"><div class="titleWrap"><div class="sectionIcon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19V9M10 19V5M16 19v-7M22 19H2"/></svg></div>Performance snapshot</div><small>through your latest day</small></div>
+      <div class="kpiGrid">
+        <div class="kpi" style="--kbg:var(--blueBg);--kc:var(--blue)"><div class="kpiTop"><div class="kpiIcon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12l5 5L20 6"/></svg></div><span>Consistency</span></div><b id="consistencyKpi">0%</b><span>points earned on days in scope</span></div>
+        <div class="kpi" style="--kbg:var(--greenBg);--kc:var(--teal)"><div class="kpiTop"><div class="kpiIcon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M5 7h14M7 17h10"/></svg></div><span>Current streak</span></div><b id="streakKpi">0 days</b><span>consecutive days scoring 4+</span></div>
+        <div class="kpi" style="--kbg:var(--amberBg);--kc:var(--amber)"><div class="kpiTop"><div class="kpiIcon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3a9 9 0 1 0 9 9M12 7v5l3 2"/></svg></div><span>Average sleep</span></div><b id="sleepKpi">—</b><span>from nights you recorded</span></div>
+        <div class="kpi" style="--kbg:var(--coralBg);--kc:var(--coral)"><div class="kpiTop"><div class="kpiIcon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h4l2-5 4 10 2-5h6"/></svg></div><span>Average energy</span></div><b id="energyKpi">—</b><span>from check-ins you recorded</span></div>
+      </div>
+    </div>
 
-Verify:
+    <div class="card">
+      <div class="sectionTitle"><div class="titleWrap"><div class="sectionIcon" style="--iconBg:var(--violetBg);--iconColor:var(--violet)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 5h16M4 12h16M4 19h16"/></svg></div>14-day consistency</div><small>tap a day to open it</small></div>
+      <div class="dayGrid" id="dayGrid"></div>
+      <div class="chartWrap"><div class="chartHeader"><b>Daily score</b><span>0–6 points</span></div><div class="chart" id="scoreChart"></div></div>
+    </div>
 
-* branch `codex/shared-catalogue-package-2`;
-* base `896da749103dd079b76d9157872e5ffd2e0e4b95`;
-* existing diff remains uncommitted and unpushed;
-* original `C:\Users\rjkha\Documents\Galha` worktree remains untouched.
+    <div class="card">
+      <div class="sectionTitle"><div class="titleWrap"><div class="sectionIcon" style="--iconBg:var(--greenBg);--iconColor:var(--teal)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12h16M4 6h10M4 18h7"/></svg></div>Habit adherence</div><small id="habitScope">No days yet</small></div>
+      <div class="habitList" id="habitList"></div>
+    </div>
 
-Do not stage, commit, push, deploy, merge, reset, stash, or clean.
+    <div class="card">
+      <div class="sectionTitle"><div class="titleWrap"><div class="sectionIcon" style="--iconBg:var(--coralBg);--iconColor:var(--coral)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h4l2-5 4 10 2-5h6"/></svg></div>Recovery & body trend</div><small>only recorded values</small></div>
+      <div class="stats" style="margin-top:0"><div class="stat"><b id="mealStat">0%</b><span>Meal adherence</span></div><div class="stat"><b id="waterStat">0/14</b><span>Hydration</span></div><div class="stat"><b id="startWeight">—</b><span>Start weight</span></div><div class="stat"><b id="weightChange">—</b><span>Weight change</span></div></div>
+      <div class="dualGrid" style="margin-top:10px">
+        <div class="miniPanel"><div class="miniHead"><b>Weight trend</b><span id="weightLatest">No data</span></div><div id="weightChart"></div></div>
+        <div class="miniPanel"><div class="miniHead"><b>Energy trend</b><span id="energyLatest">No data</span></div><div id="energyChart"></div></div>
+      </div>
+    </div>
 
-3. REAL RESPONSIVE BROWSER QUALIFICATION
+    <div class="card"><div class="sectionTitle"><div class="titleWrap"><div class="sectionIcon" style="--iconBg:var(--blueBg);--iconColor:var(--blue)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l2.4 5 5.6.8-4 3.9.9 5.5L12 14.6 7.1 17.2 8 11.7 4 7.8 9.6 7z"/></svg></div>Coach insight</div><small>based on your entries</small></div><div class="insight"><div class="insightIcon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18h6M10 22h4M8 14c-1.5-1.2-2-2.6-2-4.4A6 6 0 0 1 18 9.6c0 1.8-.5 3.2-2 4.4-.8.7-1 1.3-1 2H9c0-.7-.2-1.3-1-2z"/></svg></div><div><b id="insightTitle">Start by collecting evidence</b><p id="insightText">Complete your first day and the app will begin identifying your strongest habit and the area that needs the most attention.</p></div></div></div>
 
-Do not use the in-app browser backend that ignored viewport dimensions.
+    <div class="card"><div class="sectionTitle"><div class="titleWrap"><div class="sectionIcon" style="--iconBg:var(--violetBg);--iconColor:var(--violet)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2h9l3 3v17H6zM9 12h6M9 16h6M9 8h3"/></svg></div>Final report</div><small>export any time</small></div><div class="report" id="report"></div><div class="actions noPrint"><button class="primary" id="share">Share report</button><button class="secondary" id="print">Save as PDF</button><button class="secondary" id="csv">Export CSV</button><button class="secondary" id="backup">Backup data</button><button class="secondary" id="restoreBtn">Restore backup</button><button class="danger" id="reset">Reset everything</button><input class="fileInput" type="file" id="restoreFile" accept="application/json,.json"></div></div>
 
-Use the repository’s existing Playwright/browser runtime directly. Create explicit browser contexts with exact viewport dimensions and assert `window.innerWidth` and `window.innerHeight` before accepting evidence.
+    <div class="card flat noPrint"><div class="sectionTitle">Keep it like an app</div><div class="install"><b>Best practice:</b> add this page to your iPhone Home Screen and use that same icon every day. Your ticks and notes stay in that browser on this device. Use <b>Backup data</b> occasionally so you can recover them if website data is ever cleared.</div></div>
+  </section>
+</main>
 
-Required sizes:
+<nav class="tabs noPrint"><button class="tab active" data-tab="today"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 11.5L12 4l9 7.5V21H3z"/><path d="M9 21v-6h6v6"/></svg>Today</button><button class="tab" data-tab="progress"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19V9M10 19V5M16 19v-7M22 19H2"/></svg>Progress</button></nav>
 
-* 1440×900 desktop;
-* 1180×820 tablet landscape;
-* 820×1180 tablet portrait;
-* 390×844 mobile;
-* 360×740 small Android.
-
-Use real authentication, disposable data, and real Package 1/2 API calls.
-
-At relevant viewports verify:
-
-* recommended collection browsing;
-* English/Nepali search;
-* selection and selected count;
-* Needs information;
-* category and price resolution;
-* review and activation;
-* success;
-* existing-barcode routing;
-* mounted Fast Sales cart preservation;
-* long bilingual product names;
-* keyboard and touch behavior;
-* 44px mobile targets;
-* focus handling;
-* sticky actions not covering fields;
-* no horizontal page scrolling;
-* slow network and temporary offline states.
-
-Do not change merchant-visible wording just to satisfy automation.
-
-Capture screenshots for browse, selection, review/error, activation success, existing product, and Receive Goods. Record the measured viewport dimensions.
-
-4. RECEIVE GOODS END-TO-END INTEGRITY
-
-Complete this real journey:
-
-1. Open Receive Goods with its current receiving context.
-2. Scan/search for a product not yet in the merchant catalogue.
-3. Enter Shared Catalogue from the existing no-result path.
-4. Activate the product with zero opening stock.
-5. Return to the same Receive Goods context with the canonical product selected.
-6. Receive a known quantity through the existing authoritative receiving flow.
-7. Retry/revisit safely without duplicating the receipt.
-
-Database/API assertions must prove:
-
-* zero `OPENING_BALANCE` movement from activation;
-* exactly one authoritative receiving stock movement;
-* correct business, branch, location, product, quantity, and movement type;
-* resulting stock balance equals the received quantity;
-* catalogue link remains intact;
-* no direct stock-balance overwrite;
-* no duplicate movement after retry;
-* Fast Sales/Products/offline catalogue resolves the resulting canonical product.
-
-5. REPAIR THE STALE QUALIFICATION SELECTORS
-
-Inspect the actual current accessible search/scanner controls.
-
-Repair or centralize the stale selectors used by:
-
-* `smoke:ui`;
-* `qualify:offline-catalogue`;
-* `qualify:offline-catalogue-privacy`.
-
-Prefer stable semantic roles, accessible labels, or an established test ID. Do not restore obsolete placeholder wording in the product UI.
-
-Run all three commands after repair. If a command then exposes a real application failure, fix only the owned defect and rerun it.
-
-6. COUNTER PERFORMANCE
-
-Inspect the exact `check:counter-performance` evidence contract.
-
-Generate genuine evidence from the authenticated Package 2 browser run and supply a real `STAGE06_EVIDENCE_DIR`. Do not create empty or fabricated evidence merely to make the command pass.
-
-Run the check and report:
-
-* cart preservation;
-* local interaction timing;
-* catalogue request counts;
-* search/selection responsiveness;
-* activation refresh behavior;
-* any bundle or render regression.
-
-If the legacy checker cannot consume valid current evidence, make only a backward-compatible harness correction and explain it.
-
-7. REGRESSION VALIDATION
-
-Run one final integrated validation:
-
-* `npm run typecheck`
-* `npm run lint`
-* `npm run test --workspace @galha/web`
-* `npm run test --workspace @galha/api`
-* `npm run build --workspace @galha/api`
-* `npm run build --workspace @galha/web`
-* `npm run check:feedback`
-* `npm run check:colors`
-* `npm run check:counter-performance`
-* `npm run smoke:ui`
-* `npm run qualify:offline-catalogue`
-* `npm run qualify:offline-catalogue-privacy`
-* `npm run qualify:shared-catalogue-package2`
-* `git diff --check`
-
-The full API suite is mandatory because Package 2 changed the shared-catalogue controller, service, and repository—not only web code.
-
-Compare build/color/warning output against the clean Package 1 base. Fix any new warning or regression. Existing identical warnings may be documented with exact fingerprints.
-
-Run focused SQLite/PostgreSQL compatibility coverage available in the repository. If disposable PostgreSQL is unavailable locally, state that branch CI qualification remains required after a later authorized commit/push. Never use a shared database.
-
-8. STATUS CLASSIFICATION
-
-After this pass, report separately:
-
-* `Package 2 engineering qualification: READY` or `NOT READY`.
-* `Production/pilot rollout: NOT AUTHORIZED`.
-
-Fluent Nepali human review remains a pre-pilot requirement but does not block Package 2 engineering review. Whole-category selection remains intentionally deferred and is not a blocker.
-
-9. EVIDENCE HANDOFF
-
-Update `docs/shared-catalogue/package-2-implementation-report.md`.
-
-Also create an untracked, privacy-safe `package-2-browser-evidence.zip` containing:
-
-* screenshots;
-* viewport measurements;
-* sanitized browser results;
-* Receive Goods assertions;
-* command/result summary.
-
-Do not include authentication tokens, cookies, credentials, raw customer data, or database files. Do not stage the ZIP.
-
-Return:
-
-* ready/not-ready engineering result;
-* changed-path inventory and diff stat;
-* all command exit codes and test counts;
-* exact selector repairs;
-* viewport dimensions;
-* Receive Goods movement proof;
-* performance results;
-* screenshot and ZIP paths;
-* remaining risks;
-* confirmation that nothing was committed, pushed, deployed, or changed in the original worktree.
-
-If any mandatory gate remains unavailable, report `NOT READY` with the precise blocker instead of claiming completion.
+<script>
+(()=>{
+"use strict";
+const START="2026-08-21",END="2026-09-03",KEY="reset14_20260821_v2";
+const A=[["Warm-up treadmill","5 minutes",""],["Leg Press","2 × 10","kg"],["Chest Press","2 × 10","kg"],["Lat Pulldown","2 × 10","kg"],["Seated Leg Curl","2 × 10","kg"],["Easy treadmill","5 minutes",""]];
+const B=[["Warm-up treadmill","5 minutes",""],["Leg Press or Goblet Squat","2 × 10","kg"],["Seated Cable Row","2 × 10","kg"],["Shoulder Press","2 × 10","kg"],["Leg Extension","2 × 10","kg"],["Plank","2 × 20–30 sec","sec"]];
+const DAYS=[
+{date:"2026-08-21",type:"gym",title:"Gym A · First show-up",items:A,rule:"Do not chase soreness. Your win is getting through the door."},
+{date:"2026-08-22",type:"recovery",title:"Recovery walk",items:[["Easy walk","20 minutes",""],["Light stretching","5 minutes",""]],rule:"Make recovery deliberate, not a skipped day."},
+{date:"2026-08-23",type:"gym",title:"Gym B",items:B,rule:"No scrolling first. Clothes on, then go."},
+{date:"2026-08-24",type:"recovery",title:"Recovery walk",items:[["Easy walk","20 minutes",""],["Light stretching","5 minutes",""]],rule:"Keep the chain alive without exhausting yourself."},
+{date:"2026-08-25",type:"gym",title:"Gym A",items:A,rule:"Repeat the basics. Add weight only if technique feels easy."},
+{date:"2026-08-26",type:"recovery",title:"Recovery walk",items:[["Easy walk","20 minutes",""]],rule:"Consistency beats intensity."},
+{date:"2026-08-27",type:"recovery",title:"Recovery + reset",items:[["Easy walk","20 minutes",""],["Light stretching","5 minutes",""]],rule:"Prepare tonight so tomorrow morning requires no decision."},
+{date:"2026-08-28",type:"gym",title:"Gym B · Friday",items:B,rule:"Long workday later; keep the gym controlled and leave with energy."},
+{date:"2026-08-29",type:"recovery",title:"Recovery walk",items:[["Easy walk","20 minutes",""]],rule:"You are now past the hardest first week."},
+{date:"2026-08-30",type:"gym",title:"Gym A",items:A,rule:"Show up before your brain starts negotiating."},
+{date:"2026-08-31",type:"recovery",title:"Recovery walk",items:[["Easy walk","20 minutes",""],["Light stretching","5 minutes",""]],rule:"Protect tomorrow’s final gym session."},
+{date:"2026-09-01",type:"gym",title:"Gym B · Session 6",items:B,rule:"Finish the six-session target. Do not turn it into a max-effort test."},
+{date:"2026-09-02",type:"recovery",title:"Recovery walk",items:[["Easy walk","20 minutes",""]],rule:"Notice how much easier starting feels now."},
+{date:"2026-09-03",type:"recovery",title:"Final day + review",items:[["Easy walk","20 minutes",""],["Light stretching","5 minutes",""]],rule:"Finish the system and review the evidence, not just the scale."}
+];
+let db=load(),selected=initialDate(),saveTimer=null;
+const q=s=>document.querySelector(s),qa=s=>[...document.querySelectorAll(s)];
+function load(){try{return JSON.parse(localStorage.getItem(KEY))||{}}catch{return {}}}
+function save(immediate=false){clearTimeout(saveTimer);const work=()=>{localStorage.setItem(KEY,JSON.stringify(db));toast()};immediate?work():saveTimer=setTimeout(work,120)}
+function toast(){const el=q("#toast");el.classList.add("show");clearTimeout(window._toast);window._toast=setTimeout(()=>el.classList.remove("show"),650)}
+function parse(s){return new Date(s+"T00:00:00")}
+function isoLocal(d){return[d.getFullYear(),String(d.getMonth()+1).padStart(2,"0"),String(d.getDate()).padStart(2,"0")].join("-")}
+function initialDate(){const t=isoLocal(new Date());return t<START?START:t>END?END:t}
+function indexOf(date=selected){return DAYS.findIndex(x=>x.date===date)}
+function row(date){if(!db[date])db[date]={checks:{},ex:{},loads:{},fallback:false,weight:"",energy:"",hunger:"",sleep:"",notes:"",breakfastNote:"",lunchNote:""};return db[date]}
+function fullExercise(day,r){return day.items.every((_,i)=>!!r.ex[i])}
+function exercisePoint(day,r){return fullExercise(day,r)||(day.type==="gym"&&!!r.fallback)}
+function dayScore(day,r){return[!!r.checks.noScroll,exercisePoint(day,r),!!r.checks.breakfast,!!r.checks.lunch,!!r.checks.evening,!!r.checks.water].filter(Boolean).length}
+function longDate(s){return parse(s).toLocaleDateString("en-AU",{weekday:"long",day:"numeric",month:"long",year:"numeric"})}
+function esc(v){return String(v??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"}[c]))}
+function hasData(d){const r=row(d.date);return dayScore(d,r)>0||!!r.checks.outOfBed||!!r.weight||!!r.energy||!!r.hunger||!!r.sleep||!!r.notes||!!r.breakfastNote||!!r.lunchNote||Object.values(r.loads||{}).some(Boolean)}
+function elapsedScope(){const today=isoLocal(new Date());let byDate=today<START?0:today>END?14:indexOf(today)+1;let byData=0;DAYS.forEach((d,i)=>{if(hasData(d))byData=Math.max(byData,i+1)});return Math.max(byDate,byData)}
+function vals(field){return DAYS.map(d=>({date:d.date,v:parseFloat(row(d.date)[field])})).filter(x=>Number.isFinite(x.v))}
+function avg(field){const a=vals(field);return a.length?a.reduce((s,x)=>s+x.v,0)/a.length:null}
+function rating(s){if(s>=75)return"Outstanding 🔥";if(s>=65)return"Excellent 💪";if(s>=55)return"Good start";if(s>=45)return"Habit forming";return s?"Building":"Not started"}
+function totals(){let score=0,show=0,full=0,noScroll=0,perfect=0,water=0,mealChecks=0;DAYS.forEach(d=>{const r=row(d.date),s=dayScore(d,r);score+=s;if(d.type==="gym"&&(fullExercise(d,r)||r.fallback))show++;if(d.type==="gym"&&fullExercise(d,r))full++;if(r.checks.noScroll)noScroll++;if(s===6)perfect++;if(r.checks.water)water++;["breakfast","lunch","evening"].forEach(k=>{if(r.checks[k])mealChecks++})});return{score,show,full,noScroll,perfect,water,mealChecks}}
+function weightStats(){const a=vals("weight");if(!a.length)return{start:null,last:null,change:null};return{start:a[0].v,last:a[a.length-1].v,change:a[a.length-1].v-a[0].v}}
+function streak(scope){let s=0;for(let i=scope-1;i>=0;i--){if(dayScore(DAYS[i],row(DAYS[i].date))>=4)s++;else break}return s}
+function habitStats(){const scope=elapsedScope();const ds=DAYS.slice(0,scope);const denom=Math.max(1,scope);const data=[
+{name:"No-scroll",count:ds.filter(d=>row(d.date).checks.noScroll).length,color:"#7658d6"},
+{name:"Movement",count:ds.filter(d=>exercisePoint(d,row(d.date))).length,color:"#4361ee"},
+{name:"Breakfast",count:ds.filter(d=>row(d.date).checks.breakfast).length,color:"#14a783"},
+{name:"Lunch",count:ds.filter(d=>row(d.date).checks.lunch).length,color:"#35b98e"},
+{name:"Evening",count:ds.filter(d=>row(d.date).checks.evening).length,color:"#ec725f"},
+{name:"Water",count:ds.filter(d=>row(d.date).checks.water).length,color:"#e7a92f"}
+].map(x=>({...x,pct:scope?Math.round(x.count/denom*100):0}));return{scope,data}}
+function renderToday(){const i=indexOf(),d=DAYS[i],r=row(d.date);q("#datePicker").value=d.date;q("#dayLabel").textContent=`Day ${i+1} of 14 · ${d.type==="gym"?"Gym day":"Recovery day"}`;q("#dayTitle").textContent=d.title;q("#dateLong").textContent=longDate(d.date);q("#ruleText").textContent=d.rule;q("#exerciseTitle").textContent=d.type==="gym"?"Workout":"Movement";q("#exerciseSmall").textContent=d.type==="gym"?"60–90 sec rest between sets":"easy pace";q("#fallbackBox").style.display=d.type==="gym"?"block":"none";["outOfBed","noScroll","breakfast","lunch","evening","water"].forEach(id=>q("#"+id).checked=!!r.checks[id]);q("#fallback").checked=!!r.fallback;["weight","energy","hunger","sleep","notes","breakfastNote","lunchNote"].forEach(id=>q("#"+id).value=r[id]??"");q("#exerciseRows").innerHTML=d.items.map((it,j)=>`<div class="exerciseRow"><input type="checkbox" id="ex_${j}" data-ex="${j}" ${r.ex[j]?"checked":""}><div class="exMain"><b>${esc(it[0])}</b><span>${esc(it[1])}</span></div>${it[2]?`<input class="loadInput" inputmode="decimal" data-load="${j}" value="${esc(r.loads[j]||"")}" placeholder="${it[2]}">`:`<span></span>`}</div>`).join("");qa("[data-ex]").forEach(el=>el.onchange=e=>{row(d.date).ex[e.target.dataset.ex]=e.target.checked;save();updateDayScore();renderProgress()});qa("[data-load]").forEach(el=>el.oninput=e=>{row(d.date).loads[e.target.dataset.load]=e.target.value;save()});q("#prev").disabled=i===0;q("#next").disabled=i===13;updateDayScore()}
+function updateDayScore(){const d=DAYS[indexOf()],r=row(d.date),s=dayScore(d,r);q("#dayScore").textContent=s;q("#ring").style.setProperty("--p",String((s/6)*100));const full=fullExercise(d,r),point=exercisePoint(d,r);q("#exerciseStatus").textContent=full?"Full target complete ✓":point?"10-minute show-up ✓":"Not complete";q("#exerciseStatus").classList.toggle("good",point)}
+function sparkSvg(points,color){if(points.length<2)return'<div class="emptyChart">Add at least 2 entries<br>to see a trend.</div>';const W=280,H=72,P=7,min=Math.min(...points.map(x=>x.v)),max=Math.max(...points.map(x=>x.v)),span=Math.max(.1,max-min);const coords=points.map((x,i)=>({x:P+(W-P*2)*(i/(points.length-1)),y:H-P-(H-P*2)*((x.v-min)/span)}));const line=coords.map(p=>`${p.x.toFixed(1)},${p.y.toFixed(1)}`).join(" ");const area=`${P},${H-P} ${line} ${W-P},${H-P}`;return`<svg class="spark" viewBox="0 0 ${W} ${H}" preserveAspectRatio="none" style="--spark:${color}"><line class="gridLine" x1="0" y1="${H-12}" x2="${W}" y2="${H-12}"/><polygon class="area" points="${area}"/><polyline class="line" points="${line}"/></svg>`}
+function coachInsight(){const hs=habitStats();if(!hs.scope)return{title:"Start by collecting evidence",text:"Complete your first day and the app will begin identifying your strongest habit and the area that needs the most attention."};const sorted=[...hs.data].sort((a,b)=>b.pct-a.pct);const best=sorted[0],weak=sorted[sorted.length-1],s=streak(hs.scope);let text=`Your strongest habit is ${best.name.toLowerCase()} at ${best.pct}%. ${weak.name} is currently the weakest at ${weak.pct}%.`;if(s>=3)text+=` You also have a ${s}-day on-track streak — protect it rather than trying to be perfect.`;else text+=" Your best next move is to make the weakest habit easier to repeat tomorrow.";return{title:`Protect ${best.name}. Improve ${weak.name}.`,text}}
+function renderProgress(){const t=totals(),w=weightStats(),scope=elapsedScope(),scopeScore=DAYS.slice(0,scope).reduce((s,d)=>s+dayScore(d,row(d.date)),0),consistency=scope?Math.round(scopeScore/(scope*6)*100):0,sleep=avg("sleep"),energy=avg("energy");q("#totalScore").textContent=t.score;q("#rating").textContent=rating(t.score);q("#progressBar").style.width=(t.score/84*100)+"%";q("#gymShowups").textContent=`${t.show}/6`;q("#fullGyms").textContent=`${t.full}/6`;q("#noScrollStat").textContent=`${t.noScroll}/14`;q("#perfectDays").textContent=t.perfect;q("#consistencyKpi").textContent=consistency+"%";q("#streakKpi").textContent=streak(scope)+" days";q("#sleepKpi").textContent=sleep==null?"—":sleep.toFixed(1)+" h";q("#energyKpi").textContent=energy==null?"—":energy.toFixed(1)+"/10";q("#mealStat").textContent=Math.round(t.mealChecks/42*100)+"%";q("#waterStat").textContent=`${t.water}/14`;q("#startWeight").textContent=w.start==null?"—":w.start.toFixed(1)+" kg";q("#weightChange").textContent=w.change==null?"—":(w.change>0?"+":"")+w.change.toFixed(1)+" kg";
+q("#dayGrid").innerHTML=DAYS.map((d,i)=>{const s=dayScore(d,row(d.date)),cls=s===6?"perfect":s>0?"partial":"";return`<button class="dayTile ${cls} ${d.date===selected?"selected":""}" data-date="${d.date}"><div><b>${i+1}</b><br><small>${s}/6</small></div></button>`}).join("");qa("[data-date]").forEach(el=>el.onclick=()=>{selected=el.dataset.date;renderToday();renderProgress();switchTab("today")});
+q("#scoreChart").innerHTML=DAYS.map((d,i)=>{const s=dayScore(d,row(d.date));let bg=s===6?"linear-gradient(180deg,#35c7a4,#14a783)":s>=4?"linear-gradient(180deg,#6f83f4,#4361ee)":s?"linear-gradient(180deg,#f5ca68,#e7a92f)":"#dfe4ed";return`<div class="chartCol"><div class="chartBar" style="height:${Math.max(3,s/6*90)}px;background:${bg};opacity:${s?1:.48}"></div><small>${i+1}</small></div>`}).join("");
+const hs=habitStats();q("#habitScope").textContent=hs.scope?`first ${hs.scope} day${hs.scope===1?"":"s"}`:"No days yet";q("#habitList").innerHTML=hs.data.map(h=>`<div class="habitRow"><label>${h.name}</label><div class="habitTrack"><i style="--hc:${h.color};width:${h.pct}%"></i></div><b>${h.pct}%</b></div>`).join("");
+const wp=vals("weight"),ep=vals("energy");q("#weightChart").innerHTML=sparkSvg(wp,"#4361ee");q("#energyChart").innerHTML=sparkSvg(ep,"#ec725f");q("#weightLatest").textContent=wp.length?`${wp[wp.length-1].v.toFixed(1)} kg latest`:"No data";q("#energyLatest").textContent=ep.length?`${ep[ep.length-1].v.toFixed(1)}/10 latest`:"No data";const ci=coachInsight();q("#insightTitle").textContent=ci.title;q("#insightText").textContent=ci.text;q("#report").textContent=makeReport()}
+function makeReport(){const t=totals(),w=weightStats(),scope=elapsedScope(),scopeScore=DAYS.slice(0,scope).reduce((s,d)=>s+dayScore(d,row(d.date)),0),consistency=scope?Math.round(scopeScore/(scope*6)*100):0,cnt=k=>DAYS.filter(d=>row(d.date).checks[k]).length;let lines=["14-DAY RESET CHALLENGE REPORT","21 August – 3 September 2026","",`Overall score: ${t.score}/84 (${Math.round(t.score/84*100)}%)`,`Rating: ${rating(t.score)}`,`Consistency through latest day: ${consistency}%`,`Current 4+ point streak: ${streak(scope)} day(s)`,`Gym show-ups: ${t.show}/6`,`Full gym workouts: ${t.full}/6`,`No-scroll mornings: ${t.noScroll}/14`,`Breakfast on plan: ${cnt("breakfast")}/14`,`Lunch on plan: ${cnt("lunch")}/14`,`Evening rule: ${cnt("evening")}/14`,`Hydration: ${cnt("water")}/14`,`Perfect days: ${t.perfect}/14`,`Average sleep: ${avg("sleep")==null?"—":avg("sleep").toFixed(1)+" h"}`,`Average energy: ${avg("energy")==null?"—":avg("energy").toFixed(1)+"/10"}`,"",`Start weight: ${w.start==null?"—":w.start.toFixed(1)+" kg"}`,`Latest weight: ${w.last==null?"—":w.last.toFixed(1)+" kg"}`,`Weight change: ${w.change==null?"—":(w.change>0?"+":"")+w.change.toFixed(1)+" kg"}`,"","DAILY LOG"];DAYS.forEach((d,i)=>{const r=row(d.date);lines.push(`${String(i+1).padStart(2,"0")} · ${d.date} · ${dayScore(d,r)}/6 · ${d.title}${r.notes?" · "+r.notes:""}`)});return lines.join("\n")}
+function switchTab(tab){qa(".tab").forEach(x=>x.classList.toggle("active",x.dataset.tab===tab));q("#todayPane").classList.toggle("active",tab==="today");q("#progressPane").classList.toggle("active",tab==="progress");if(tab==="progress")renderProgress();window.scrollTo({top:0,behavior:"smooth"})}
+["outOfBed","noScroll","breakfast","lunch","evening","water"].forEach(id=>q("#"+id).onchange=e=>{row(selected).checks[id]=e.target.checked;save();updateDayScore();renderProgress()});q("#fallback").onchange=e=>{row(selected).fallback=e.target.checked;save();updateDayScore();renderProgress()};["weight","energy","hunger","sleep","notes","breakfastNote","lunchNote"].forEach(id=>q("#"+id).oninput=e=>{row(selected)[id]=e.target.value;save();renderProgress()});q("#datePicker").onchange=e=>{if(!e.target.value)return;selected=e.target.value<START?START:e.target.value>END?END:e.target.value;renderToday();renderProgress()};q("#prev").onclick=()=>{selected=DAYS[Math.max(0,indexOf()-1)].date;renderToday();renderProgress()};q("#next").onclick=()=>{selected=DAYS[Math.min(13,indexOf()+1)].date;renderToday();renderProgress()};qa(".tab").forEach(x=>x.onclick=()=>switchTab(x.dataset.tab));
+q("#share").onclick=async()=>{const text=makeReport();try{if(navigator.share)await navigator.share({title:"14-Day Reset Report",text});else{await navigator.clipboard.writeText(text);alert("Report copied.")}}catch{}};q("#print").onclick=()=>window.print();q("#csv").onclick=()=>{const rows=[["Day","Date","Type","Score","Gym full","Gym fallback","No scroll","Breakfast","Lunch","Evening","Water","Weight","Energy","Hunger","Sleep","Notes"]];DAYS.forEach((d,i)=>{const r=row(d.date);rows.push([i+1,d.date,d.type,dayScore(d,r),fullExercise(d,r),!!r.fallback,!!r.checks.noScroll,!!r.checks.breakfast,!!r.checks.lunch,!!r.checks.evening,!!r.checks.water,r.weight||"",r.energy||"",r.hunger||"",r.sleep||"",r.notes||""])});download("14-day-reset-report.csv",rows.map(x=>x.map(v=>`"${String(v).replaceAll('"','""')}"`).join(",")).join("\n"),"text/csv")};q("#backup").onclick=()=>download("14-day-reset-backup.json",JSON.stringify({version:3,start:START,data:db},null,2),"application/json");q("#restoreBtn").onclick=()=>q("#restoreFile").click();q("#restoreFile").onchange=async e=>{const f=e.target.files?.[0];if(!f)return;try{const obj=JSON.parse(await f.text()),incoming=obj.data||obj;if(!incoming||typeof incoming!=="object")throw new Error();db=incoming;save(true);renderToday();renderProgress();alert("Backup restored.")}catch{alert("That backup file could not be read.")}finally{e.target.value=""}};q("#reset").onclick=()=>{if(confirm("Delete all 14-day challenge entries from this device?")){localStorage.removeItem(KEY);db={};renderToday();renderProgress()}};
+function download(name,text,type){const blob=new Blob([text],{type:type+";charset=utf-8"}),u=URL.createObjectURL(blob),a=document.createElement("a");a.href=u;a.download=name;document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(u),800)}
+const today=isoLocal(new Date());if(today>=START)q("#startNotice").style.display="none";q("#headerPill").textContent=today<START?"Starts tomorrow":today>END?"Challenge complete":`Day ${indexOf(today)+1} / 14`;renderToday();renderProgress();
+})();
+</script>
+</body>
+</html>
